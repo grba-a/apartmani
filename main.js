@@ -62,7 +62,7 @@ const dict = {
     apts_note: "Cijena ovisi o datumu i broju noćenja. Pošalji upit i javimo Vam točnu ponudu.",
 
     amen_title: "Sadržaji",
-    amen_sub: "Jednostavno, jasno — sve bitno za dobar boravak.",
+    amen_sub: "Jednostavno, jasno i sve bitno za dobar boravak.",
     amen_wifi: "Besplatan Wi-Fi",
     amen_ac: "Klima uređaj",
     amen_parking: "Parking",
@@ -71,6 +71,18 @@ const dict = {
     amen_family: "Family friendly",
     amen_host: "Podrška domaćina",
     amen_balcony_note: "Balkon s pogledom (A2 i A4)",
+
+    rev_title: "Recenzije",
+    rev_sub: "Iskustva gostiju i par kratkih dojmova.",
+
+    rev_1_text: "Čisto, mirno i odlična lokacija. Sve jednostavno i bez stresa.",
+    rev_1_name: "Jack",
+
+    rev_2_text: "Balkon i pogled na more su top. Sve uredno i domaćin brz na odgovoru.",
+    rev_2_name: "Ana",
+
+    rev_3_text: "Parking je stvarno plus. Super baza za Dubrovnik i izlete.",
+    rev_3_name: "Karlo",
 
     gal_title: "Galerija",
 
@@ -191,7 +203,7 @@ const dict = {
     apts_note: "Prices depend on dates and length of stay. Send an inquiry and we’ll get back with an exact offer.",
 
     amen_title: "Amenities",
-    amen_sub: "Simple and clear — everything you need for a great stay.",
+    amen_sub: "Simple and clear and everything you need for a great stay.",
     amen_wifi: "Free Wi-Fi",
     amen_ac: "Air conditioning",
     amen_parking: "Parking",
@@ -200,6 +212,18 @@ const dict = {
     amen_family: "Family-friendly",
     amen_host: "Host support",
     amen_balcony_note: "Balcony + view (A2 & A4)",
+
+    rev_title: "Reviews",
+    rev_sub: "Guest experiences and a few short impressions.",
+
+    rev_1_text: "Clean, quiet, and a great location. Everything simple and stress-free.",
+    rev_1_name: "Jack",
+
+    rev_2_text: "The balcony and sea view are amazing. Everything was tidy and the host responded quickly.",
+    rev_2_name: "Ana",
+
+    rev_3_text: "Parking is a big plus. A great base for Dubrovnik and day trips.",
+    rev_3_name: "Karlo",
 
     gal_title: "Gallery",
 
@@ -402,3 +426,16 @@ initReveal();
 initNav();
 initScrollProgress();
 initForm();
+
+function initStars() {
+  document.querySelectorAll(".review[data-rating]").forEach(card => {
+    const rating = parseFloat(card.dataset.rating || "0");
+    const stars = card.querySelector(".stars");
+    if (!stars) return;
+
+    stars.style.setProperty("--rating", rating);
+  });
+}
+
+initStars();
+
