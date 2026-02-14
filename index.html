@@ -7,6 +7,11 @@
   <title>Apartments Grbić | Mlini </title>
 
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -184,7 +189,7 @@
           <div class="feature reveal" style="transition-delay:160ms;"><span class="icon">✓</span><span data-i18n="amen_quiet">Mirna lokacija</span></div>
           <div class="feature reveal" style="transition-delay:200ms;"><span class="icon">✓</span><span data-i18n="amen_family">Family friendly</span></div>
           <div class="feature reveal" style="transition-delay:240ms;"><span class="icon">✓</span><span data-i18n="amen_host">Podrška domaćina</span></div>
-          <div class="feature reveal" style="transition-delay:280ms;"><span class="icon">✓</span><span data-i18n="amen_balcony_note">Balkon s pogledom (A2 i A4)</span></div>
+          <div class="feature reveal" style="transition-delay:280ms;"><span class="icon">✓</span><span data-i18n="amen_balcony_note">Balkon</span></div>
         </div>
       </div>
     </section>
@@ -263,27 +268,47 @@
       </div>
     </section>
 
-<!-- LIGHTBOX -->
+    <!-- LIGHTBOX -->
     <div class="lightbox" id="lightbox">
       <img src="" alt="Preview" />
     </div>
 
 
-    <!-- LOCATION -->
+      <!-- LOCATION -->
     <section class="section section--alt" id="location">
       <div class="container">
         <div class="section__head reveal">
           <h2 class="h2" data-i18n="loc_title">Lokacija</h2>
+          <p class="sub" data-i18n="loc_sub">
+            Mirna lokacija izvan gužve, ali blizu svega.
+          </p>
         </div>
 
         <div class="split">
           <div class="split__text reveal">
+
             <ul class="spec spec--big">
-              <li data-i18n="loc_li1">Dubrovnik: kratka vožnja / izlet</li>
-              <li data-i18n="loc_li2">Plaža: nekoliko minuta pješice</li>
-              <li data-i18n="loc_li3">Restorani i šetnica u blizini</li>
+              <li data-i18n="loc_li1">🚗 Dubrovnik: kratka vožnja / izlet</li>
+              <li data-i18n="loc_li2">🏖️ Plaža: nekoliko minuta pješice</li>
+              <li data-i18n="loc_li3">🍽️ Restorani i šetnica u blizini</li>
             </ul>
-            <a class="btn btn--ghost" href="#contact" data-i18n="loc_cta">Pošalji upit</a>
+
+            <!-- CTA buttons -->
+            <div class="location__actions">
+              <a class="btn btn--ghost" href="#contact" data-i18n="loc_cta">
+                Pošalji upit
+              </a>
+
+              <a
+                class="btn btn--primary"
+                href="https://maps.app.goo.gl/79b8VsK1zgCx7ovY9"
+                target="_blank"
+                rel="noopener"
+                data-i18n="loc_maps">
+                Google Maps
+              </a>
+            </div>
+
           </div>
 
           <div class="map reveal" aria-label="Google map">
@@ -291,7 +316,8 @@
               title="Apartments Grbić map"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=Mlini%20Croatia&output=embed"></iframe>
+              src="https://www.google.com/maps?q=Mlini%20Croatia&output=embed">
+            </iframe>
           </div>
         </div>
       </div>
@@ -309,7 +335,7 @@
           <a class="card card--link reveal" href="pages/blog.html">
             <div class="card__body">
               <h3 class="h3" data-i18n="blog_1_title">Izleti (Dubrovnik)</h3>
-              <p class="muted" data-i18n="blog_1_desc">Ideje za jednodnevne izlete bez stresa.</p>
+              <p class="muted" data-i18n="blog_1_desc">Ideje za jednodnevne izlete.</p>
               <span class="link" data-i18n="blog_read">Pročitaj →</span>
             </div>
           </a>
@@ -317,7 +343,7 @@
           <a class="card card--link reveal" style="transition-delay:60ms;" href="pages/blog.html">
             <div class="card__body">
               <h3 class="h3" data-i18n="blog_2_title">Plaže (Mlini i okolica)</h3>
-              <p class="muted" data-i18n="blog_2_desc">Najljepša mjesta za kupanje i chill.</p>
+              <p class="muted" data-i18n="blog_2_desc">Najljepša mjesta za kupanje i opuštanje.</p>
               <span class="link" data-i18n="blog_read">Pročitaj →</span>
             </div>
           </a>
