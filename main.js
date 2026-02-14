@@ -31,11 +31,6 @@ const dict = {
     hero_cta_primary: "Provjeri dostupnost",
     hero_cta_secondary: "Pogledaj apartmane",
 
-    pill_parking: "Parking",
-    pill_wifi: "Wi-Fi",
-    pill_ac: "Klima",
-    pill_balcony_note: "Balkon (A2 & A4)",
-
     apts_title: "Apartmani",
     apts_sub: "4 apartmana u Mlinima. Odaberi broj, pošalji upit i mi potvrđujemo dostupnost i cijenu.",
     badge_standard: "Standard",
@@ -171,11 +166,6 @@ const dict = {
     hero_lead: "Perfect for couples, families, and anyone who wants a clean and quiet base to explore Dubrovnik",
     hero_cta_primary: "Check availability",
     hero_cta_secondary: "View apartments",
-
-    pill_parking: "Parking",
-    pill_wifi: "Wi-Fi",
-    pill_ac: "A/C",
-    pill_balcony_note: "Balcony (A2 & A4)",
 
     apts_title: "Apartments",
     apts_sub: "4 apartments in Mlini. Choose a number, send an inquiry, and we’ll confirm availability and price.",
@@ -439,3 +429,22 @@ function initStars() {
 
 initStars();
 
+/* ===== Gallery Lightbox ===== */
+function initGallery(){
+  const lightbox = document.getElementById("lightbox");
+  const imgPreview = lightbox?.querySelector("img");
+
+  document.querySelectorAll(".gallery__item").forEach(img => {
+    img.addEventListener("click", () => {
+      if(!lightbox) return;
+      imgPreview.src = img.src;
+      lightbox.classList.add("active");
+    });
+  });
+
+  lightbox?.addEventListener("click", () => {
+    lightbox.classList.remove("active");
+  });
+}
+
+initGallery();
