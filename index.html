@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Apartments Grbić — modern apartments in Mlini near Dubrovnik. Inquiries and reservations." />
+  <title>Apartments Grbić | Mlini | Dubrovnik </title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Apartments Grbić">
+        <img class="brand__logo" src="assets/logo.jpg" alt="Apartments Grbić logo" />
+        <span class="brand__text">Apartments Grbić</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Toggle menu</span>
+          <span class="burger" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a class="nav__link" href="#apartments" data-i18n="nav_apartments">Apartmani</a>
+          <a class="nav__link" href="#amenities" data-i18n="nav_amenities">O nama</a>
+          <a class="nav__link" href="#gallery" data-i18n="nav_gallery">Galerija</a>
+          <a class="nav__link" href="#location" data-i18n="nav_location">Lokacija</a>
+          <a class="nav__link" href="#blog" data-i18n="nav_blog">Blog</a>
+          <a class="nav__link nav__link--cta" href="#contact" data-i18n="nav_contact">Kontakt</a>
+
+          <div class="nav__controls">
+            <button class="chip" id="langToggle" type="button" aria-label="Switch language">
+              <span class="chip__dot" aria-hidden="true"></span>
+              <span id="langLabel">HR</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO (background image) -->
+    <section class="section hero hero--bg" id="hero">
+      <div class="container hero__inner hero__inner--center">
+        <div class="hero__panel reveal">
+          <p class="kicker hero__kicker" data-i18n="hero_kicker">Mlini • Dubrovnik</p>
+
+          <h1 class="title hero__title" data-i18n="hero_title">
+            Najbolji odabir za ljetovanje
+          </h1>
+
+          <p class="lead hero__lead" data-i18n="hero_lead">
+            Savršeno za parove i obitelji koji žele mirnu bazu za istraživanje Dubrovnika.<br> 
+            Ljetni termini se brzo popunjavaju. Pošaljite upit na vrijeme.
+          </p>
+
+          <div class="actions">
+            <a class="btn btn--primary" href="#contact" data-i18n="hero_cta_primary">Provjeri dostupnost</a>
+            <a class="btn btn--ghost" href="#apartments" data-i18n="hero_cta_secondary">Pogledaj apartmane</a>
+          </div>
+
+          <div class="social-proof">
+            <div class="proof">
+              ⭐ <strong>8.8</strong> Booking
+            </div>
+            <div class="proof">
+              ⭐ <strong>4.3</strong> Google
+            </div>
+            <div class="proof" data-i18n="hero_guests">
+              👥 4000+ zadovoljnih gostiju
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APARTMENTS -->
+    <section class="section" id="apartments">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2" data-i18n="apts_title">Apartmani</h2>
+        </div>
+
+        <div class="grid grid--2">
+
+          <!-- APARTMENT 1 -->
+          <article class="card reveal">
+            <div class="card__top">
+
+              <div class="thumbCarousel">
+                <div class="thumbCarousel__track">
+                  <img class="thumbCarousel__img" src="assets/apt1-1.jpg" alt="Apartman 1">
+                  <img class="thumbCarousel__img" src="assets/apt1-2.jpg" alt="Apartman 1">
+                  <img class="thumbCarousel__img" src="assets/apt1-3.jpg" alt="Apartman 1">
+                </div>
+
+                <button class="thumbCarousel__btn thumbCarousel__btn--prev">‹</button>
+                <button class="thumbCarousel__btn thumbCarousel__btn--next">›</button>
+
+                <div class="thumbCarousel__dots"></div>
+              </div>
+
+              <span class="badge badge--soft" data-i18n="badge_standard">Standard</span>
+            </div>
+
+            <div class="card__body">
+              <h3 class="h3" data-i18n="apt1_title">Apartman 1</h3>
+              <p class="muted" data-i18n="apt1_desc"></p>
+              <div class="card__footer">
+                <a class="link" href="#contact" data-i18n="apt_cta">Upit →</a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- APARTMENT 2 -->
+          <article class="card reveal" style="transition-delay:60ms;">
+            <div class="card__top">
+
+              <div class="thumbCarousel">
+                <div class="thumbCarousel__track">
+                  <img class="thumbCarousel__img" src="assets/apt2-1.jpg" alt="Apartman 2">
+                  <img class="thumbCarousel__img" src="assets/apt2-2.jpg" alt="Apartman 2">
+                  <img class="thumbCarousel__img" src="assets/apt2-3.jpg" alt="Apartman 2">
+                  <img class="thumbCarousel__img" src="assets/apt2-4.jpg" alt="Apartman 2">
+                </div>
+
+                <button class="thumbCarousel__btn thumbCarousel__btn--prev">‹</button>
+                <button class="thumbCarousel__btn thumbCarousel__btn--next">›</button>
+
+                <div class="thumbCarousel__dots"></div>
+              </div>
+
+              <span class="badge" data-i18n="badge_view">Balkon + pogled</span>
+            </div>
+
+            <div class="card__body">
+              <h3 class="h3" data-i18n="apt2_title">Apartman 2</h3>
+              <p class="muted" data-i18n="apt2_desc"></p>
+              <div class="card__footer">
+                <a class="link" href="#contact" data-i18n="apt_cta">Upit →</a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- APARTMENT 3 -->
+          <article class="card reveal" style="transition-delay:120ms;">
+            <div class="card__top">
+
+              <div class="thumbCarousel">
+                <div class="thumbCarousel__track">
+                  <img class="thumbCarousel__img" src="assets/apt3-1.jpg" alt="Apartman 3">
+                  <img class="thumbCarousel__img" src="assets/apt3-2.jpg" alt="Apartman 3">
+                  <img class="thumbCarousel__img" src="assets/apt3-3.jpg" alt="Apartman 3">
+                </div>
+
+                <button class="thumbCarousel__btn thumbCarousel__btn--prev">‹</button>
+                <button class="thumbCarousel__btn thumbCarousel__btn--next">›</button>
+
+                <div class="thumbCarousel__dots"></div>
+              </div>
+
+              <span class="badge badge--soft" data-i18n="badge_standard">Standard</span>
+            </div>
+
+            <div class="card__body">
+              <h3 class="h3" data-i18n="apt3_title">Apartman 3</h3>
+              <p class="muted" data-i18n="apt3_desc"></p>
+              <div class="card__footer">
+                <a class="link" href="#contact" data-i18n="apt_cta">Upit →</a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- APARTMENT 4 -->
+          <article class="card reveal" style="transition-delay:180ms;">
+            <div class="card__top">
+
+              <div class="thumbCarousel">
+                <div class="thumbCarousel__track">
+                  <img class="thumbCarousel__img" src="assets/apt4-1.jpg" alt="Apartman 4">
+                  <img class="thumbCarousel__img" src="assets/apt4-2.jpg" alt="Apartman 4">
+                  <img class="thumbCarousel__img" src="assets/apt4-3.jpg" alt="Apartman 4">
+                  <img class="thumbCarousel__img" src="assets/apt4-4.jpg" alt="Apartman 4">
+                </div>
+
+                <button class="thumbCarousel__btn thumbCarousel__btn--prev">‹</button>
+                <button class="thumbCarousel__btn thumbCarousel__btn--next">›</button>
+
+                <div class="thumbCarousel__dots"></div>
+              </div>
+
+              <span class="badge" data-i18n="badge_view">Balkon + pogled</span>
+            </div>
+
+            <div class="card__body">
+              <h3 class="h3" data-i18n="apt4_title">Apartman 4</h3>
+              <p class="muted" data-i18n="apt4_desc"></p>
+              <div class="card__footer">
+                <a class="link" href="#contact" data-i18n="apt_cta">Upit →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="note reveal" data-i18n="apts_note"></p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section--alt" id="about">
+      <div class="container">
+        <div class="aboutMini card reveal">
+
+          <!-- Title top-left -->
+          <h2 class="h2 aboutMini__title" data-i18n="about_title">O nama</h2>
+
+          <!-- Avatar centered under title -->
+          <div class="aboutMini__media">
+            <img
+              class="aboutMini__avatar"
+              src="assets/about.jpg"
+              alt="Ana Grbić – domaćin Apartments Grbić"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Text + CTA left as before -->
+          <div class="aboutMini__content">
+            <p class="muted aboutMini__text" data-i18n="about_text">
+              Ana Grbić je domaćin s više od 20 godina iskustva u iznajmljivanju i preko 200 zadovoljnih gostiju.
+              Kao majka troje djece, posebnu pažnju posvećuje čistoći, sigurnosti i ugodnom boravku.
+              Tu je za preporuke, pomoć i sve što Vam treba tijekom odmora.
+            </p>
+
+            <div class="aboutMini__actions">
+              <a class="btn btn--primary" href="#contact" data-i18n="about_cta">Pošalji upit</a>
+              <a class="btn btn--ghost" href="#reviews" data-i18n="about_cta_2">Pogledaj recenzije</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- AMENITIES -->
+    <section class="section section--alt" id="amenities">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2" data-i18n="amen_title">Sadržaji</h2>
+        </div>
+
+        <div class="grid grid--4">
+          <div class="feature reveal"><span class="icon">✓</span><span data-i18n="amen_wifi">Besplatan Wi-Fi</span></div>
+          <div class="feature reveal" style="transition-delay:40ms;"><span class="icon">✓</span><span data-i18n="amen_ac">Klima uređaj</span></div>
+          <div class="feature reveal" style="transition-delay:80ms;"><span class="icon">✓</span><span data-i18n="amen_parking">Parking</span></div>
+          <div class="feature reveal" style="transition-delay:120ms;"><span class="icon">✓</span><span data-i18n="amen_beach">Blizu plaže</span></div>
+          <div class="feature reveal" style="transition-delay:160ms;"><span class="icon">✓</span><span data-i18n="amen_quiet">Mirna lokacija</span></div>
+          <div class="feature reveal" style="transition-delay:200ms;"><span class="icon">✓</span><span data-i18n="amen_family">Family friendly</span></div>
+          <div class="feature reveal" style="transition-delay:240ms;"><span class="icon">✓</span><span data-i18n="amen_host">Podrška domaćina</span></div>
+          <div class="feature reveal" style="transition-delay:280ms;"><span class="icon">✓</span><span data-i18n="amen_balcony_note">Balkon</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2" data-i18n="rev_title">Recenzije</h2>
+          <p class="sub" data-i18n="rev_sub">Iskustva gostiju i par kratkih dojmova.</p>
+        </div>
+
+        <div class="reviews">
+          <article class="review card reveal" data-rating="5">
+            <div class="review__top">
+              <div class="stars" aria-label="5 out of 5" role="img"></div>
+              <span class="review__score">5.0</span>
+            </div>
+            <p class="review__text" data-i18n="rev_1_text">
+              Čisto, mirno i odlična lokacija. Sve jednostavno i bez stresa.
+            </p>
+            <div class="review__meta">
+              <span class="review__name" data-i18n="rev_1_name">Jack</span>
+              <span class="review__source"> • Google</span>
+            </div>
+          </article>
+
+          <article class="review card reveal" style="transition-delay:60ms;" data-rating="4.8">
+            <div class="review__top">
+              <div class="stars" aria-label="4.8 out of 5" role="img"></div>
+              <span class="review__score">4.8</span>
+            </div>
+            <p class="review__text" data-i18n="rev_2_text">
+              Balkon i pogled na more su top. Sve uredno i domaćin brz na odgovoru.
+            </p>
+            <div class="review__meta">
+              <span class="review__name" data-i18n="rev_2_name">Ana</span>
+              <span class="review__source"> • Booking</span>
+            </div>
+          </article>
+
+          <article class="review card reveal" style="transition-delay:120ms;" data-rating="4.6">
+            <div class="review__top">
+              <div class="stars" aria-label="4.6 out of 5" role="img"></div>
+              <span class="review__score">4.6</span>
+            </div>
+            <p class="review__text" data-i18n="rev_3_text">
+              Parking je stvarno plus. Super baza za Dubrovnik i izlete.
+            </p>
+            <div class="review__meta">
+              <span class="review__name" data-i18n="rev_3_name">Karlo</span>
+              <span class="review__source"> • Tripadvisor</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2" data-i18n="gal_title">Galerija</h2>
+        </div>
+
+        <div class="gallery">
+          <img src="assets/gallery1.jpg" alt="Apartments Grbić" class="gallery__item reveal" />
+          <img src="assets/gallery2.jpg" alt="Apartments Grbić" class="gallery__item reveal" style="transition-delay:60ms;" />
+          <img src="assets/gallery3.jpg" alt="Apartments Grbić" class="gallery__item reveal" style="transition-delay:120ms;" />
+          <img src="assets/gallery4.jpg" alt="Apartments Grbić" class="gallery__item reveal" style="transition-delay:180ms;" />
+          <img src="assets/gallery5.jpg" alt="Apartments Grbić" class="gallery__item reveal" style="transition-delay:240ms;" />
+          <img src="assets/gallery6.jpg" alt="Apartments Grbić" class="gallery__item reveal" style="transition-delay:300ms;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+      <img src="" alt="Preview" />
+    </div>
+
+
+      <!-- LOCATION -->
+    <section class="section section--alt" id="location">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2" data-i18n="loc_title">Lokacija</h2>
+          <p class="sub" data-i18n="loc_sub">
+            Mirna lokacija izvan gužve, ali blizu svega.
+          </p>
+        </div>
+
+        <div class="split">
+          <div class="split__text reveal">
+
+            <ul class="spec spec--big">
+              <li data-i18n="loc_li1"> Dubrovnik: kratka vožnja od 10 minuta</li>
+              <li data-i18n="loc_li2"> Uber do Dubrovnika (max 20€)</li>
+              <li data-i18n="loc_li3"> Autobusna karta u jednom smjeru (3€)</li>
+              <li data-i18n="loc_li4"> Plaža: nekoliko minuta pješice</li>
+              <li data-i18n="loc_li5"> Restorani i šetnica u blizini</li>
+            </ul>
+
+            <!-- CTA buttons -->
+            <div class="location__actions">
+              <a class="btn btn--ghost" href="#contact" data-i18n="loc_cta">
+                Pošalji upit
+              </a>
+
+              <a
+                class="btn btn--primary"
+                href="https://maps.app.goo.gl/79b8VsK1zgCx7ovY9"
+                target="_blank"
+                rel="noopener"
+                data-i18n="loc_maps">
+                Google Maps
+              </a>
+            </div>
+
+          </div>
+
+          <div class="map reveal" aria-label="Google map">
+            <iframe
+              title="Apartments Grbić map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Mlini%20Croatia&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+            <!-- BLOG -->
+    <section class="section" id="blog">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2" data-i18n="blog_title">Blog</h2>
+          <p class="sub" data-i18n="blog_sub">
+            Kratki vodiči i ideje za izlete oko Dubrovnika.
+          </p>
+        </div>
+
+        <div class="grid grid--3 blog__grid">
+
+          <!-- BLOG 1 -->
+          <a class="card card--link blog__card reveal" href="pages/blog.html">
+            <div class="blog__image">
+              <img src="assets/blog1.jpg" alt="Izleti Dubrovnik" />
+            </div>
+            <div class="card__body">
+              <h3 class="h3" data-i18n="blog_1_title">Izleti (Dubrovnik)</h3>
+              <p class="muted" data-i18n="blog_1_desc">
+                Ideje za jednodnevne izlete.
+              </p>
+              <span class="link" data-i18n="blog_read">Pročitaj →</span>
+            </div>
+          </a>
+
+          <!-- BLOG 2 -->
+          <a class="card card--link blog__card reveal" style="transition-delay:60ms;" href="pages/blog.html">
+            <div class="blog__image">
+              <img src="assets/blog2.jpg" alt="Plaže Mlini" />
+            </div>
+            <div class="card__body">
+              <h3 class="h3" data-i18n="blog_2_title">Plaže (Mlini i okolica)</h3>
+              <p class="muted" data-i18n="blog_2_desc">
+                Najljepša mjesta za kupanje i opuštanje.
+              </p>
+              <span class="link" data-i18n="blog_read">Pročitaj →</span>
+            </div>
+          </a>
+
+          <!-- BLOG 3 -->
+          <a class="card card--link blog__card reveal" style="transition-delay:120ms;" href="pages/blog.html">
+            <div class="blog__image">
+              <img src="assets/blog3.jpg" alt="Dolazak i parking" />
+            </div>
+            <div class="card__body">
+              <h3 class="h3" data-i18n="blog_3_title">Dolazak i parking</h3>
+              <p class="muted" data-i18n="blog_3_desc">
+                Praktični savjeti za dolazak autom.
+              </p>
+              <span class="link" data-i18n="blog_read">Pročitaj →</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2" data-i18n="faq_title">FAQ</h2>
+          <p class="sub" data-i18n="faq_sub">Najčešća pitanja prije dolaska:</p>
+        </div>
+
+        <div class="faq">
+          <details class="faq__item reveal">
+            <summary data-i18n="faq_q1">Koje je vrijeme check-in / check-out?</summary>
+            <p data-i18n="faq_a1">Tipično check-in od 14:00, check-out do 10:00. Fleksibilno ako je moguće.</p>
+          </details>
+
+          <details class="faq__item reveal" style="transition-delay:60ms;">
+            <summary data-i18n="faq_q2">Imate li parking?</summary>
+            <p data-i18n="faq_a2">Da, parking je dostupan.</p>
+          </details>
+
+          <details class="faq__item reveal" style="transition-delay:120ms;">
+            <summary data-i18n="faq_q3">Je li Wi-Fi uključen?</summary>
+            <p data-i18n="faq_a3">Da, Wi-Fi je besplatan.</p>
+          </details>
+
+          <details class="faq__item reveal" style="transition-delay:180ms;">
+            <summary data-i18n="faq_q4">Imaju li svi apartmani klimu?</summary>
+            <p data-i18n="faq_a4">Da, svi apartmani imaju klima uređaj.</p>
+          </details>
+
+          <details class="faq__item reveal" style="transition-delay:240ms;">
+            <summary data-i18n="faq_q5">Imaju li svi apartmani balkon?</summary>
+            <p data-i18n="faq_a5">Balkon s pogledom na more imaju apartmani 2 i 4.</p>
+          </details>
+
+          <details class="faq__item reveal" style="transition-delay:300ms;">
+            <summary data-i18n="faq_q6">Kako funkcionira rezervacija?</summary>
+            <p data-i18n="faq_a6">Pošalješ upit s datumima i brojem osoba, a mi potvrđujemo dostupnost i šaljemo ponudu.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="h2" data-i18n="contact_title">Upit / Rezervacija</h2>
+          <p class="sub" data-i18n="contact_sub">Ispunite formu i ostalo ostavite nama.</p>
+        </div>
+
+        <div class="split">
+          <form class="form reveal" id="bookingForm" autocomplete="on">
+            <div class="form__row">
+              <label>
+                <span data-i18n="form_name">Ime i prezime</span>
+                <input name="name" type="text" required placeholder="npr. Ana Horvat" />
+              </label>
+              <label>
+                <span data-i18n="form_email">Email</span>
+                <input name="email" type="email" required placeholder="ana@email.com" />
+              </label>
+            </div>
+
+            <div class="form__row">
+              <label>
+                <span data-i18n="form_checkin">Dolazak</span>
+                <input name="checkin" type="date" required />
+              </label>
+              <label>
+                <span data-i18n="form_checkout">Odlazak</span>
+                <input name="checkout" type="date" required />
+              </label>
+            </div>
+
+            <div class="form__row">
+              <label>
+                <span data-i18n="form_guests">Broj osoba</span>
+                <input name="guests" type="number" min="1" max="12" required value="2" />
+              </label>
+              <label>
+                <span data-i18n="form_apartment">Preferirani apartman</span>
+                <select name="apartment" required>
+                  <option value="1" data-i18n="form_opt_1">Apartman 1</option>
+                  <option value="2" data-i18n="form_opt_2">Apartman 2</option>
+                  <option value="3" data-i18n="form_opt_3">Apartman 3</option>
+                  <option value="4" data-i18n="form_opt_4">Apartman 4</option>
+                  <option value="any" data-i18n="form_opt_any">Svejedno</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              <span data-i18n="form_message">Poruka (opcionalno)</span>
+              <textarea name="message" rows="4" placeholder="Napiši posebne želje (kasni dolazak, djeca...)"></textarea>
+            </label>
+
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit" data-i18n="form_submit">Pošalji upit</button>
+            </div>
+
+            <div class="toast" id="toast" role="status" aria-live="polite"></div>
+          </form>
+
+          <aside class="contactCard reveal" style="transition-delay:80ms;">
+            <h3 class="h3" data-i18n="contact_info_title">Kontakt</h3>
+            <p class="muted" data-i18n="contact_info_sub">Možeš i direktno:</p>
+
+            <div class="contactList">
+              <div class="contactList__item">
+                <span class="contactList__k" data-i18n="contact_phone">Telefon</span>
+                <a class="contactList__v" href="tel:+385989600088" title="Phone">+385 98 96 000 88</a>
+              </div>
+              <div class="contactList__item">
+                <span class="contactList__k" data-i18n="contact_email">Email</span>
+                <a class="contactList__v" href="mailto:apt.grbic.mlini@gmail.com">apt.grbic.mlini@gmail.com</a>
+              </div>
+              <div class="contactList__item">
+                <span class="contactList__k" data-i18n="contact_address">Adresa</span>
+                <span class="contactList__v" data-i18n="contact_address_val">Mlini, Hrvatska</span>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="social">
+              <a class="chip" href="https://www.instagram.com/grbicapartments/" data-i18n="contact_instagram">Instagram</a>
+              <a class="chip" href="https://www.tripadvisor.com/Hotel_Review-g658382-d3831572-Reviews-Aparments_Grbic-Mlini_Dubrovnik_Neretva_County_Dalmatia.html" data-i18n="contact_tripadvisor">Tripadvisor</a>
+              <a class="chip" href="https://maps.app.goo.gl/79b8VsK1zgCx7ovY9" data-i18n="contact_google">Google Maps</a>
+              <a class="chip" href="https://www.booking.com/hotel/hr/apartmani-grbia.hr.html?chal_t=1771004290354&force_referer=https%3A%2F%2Fwww.google.com%2F" data-i18n="contact_booking">Booking</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Apartments Grbić</strong>
+        <p class="tiny muted" data-i18n="footer_tag">Mlini • Dubrovnik</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="pages/privacy.html" data-i18n="footer_privacy">Privacy</a>
+        <a href="pages/terms.html" data-i18n="footer_terms">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
